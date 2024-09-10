@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor-imagen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* SVG sobre la imagen */
+.icono-sobre-imagen {
+    position: absolute;
+    top: 425px; /* Ajusta la posición superior */
+    left: 655px; /* Ajusta la posición izquierda */
+    z-index: 2; /* Asegura que el SVG esté encima de la imagen */
+    animation: vibrarVertical 1s infinite;
+}
+
+.texto-sobre-imagen {
+    position: absolute;
+    bottom: 70px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: #5C659F;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    animation: vibrarVertical 5s infinite;
+    font-family: 'Open Sans';
+    z-index: 3; /* Asegura que el texto esté encima del SVG */
+}
+
+
+
+@keyframes vibrarVertical {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-2px); /* Desplazamiento hacia arriba */
+    }
+    50% {
+        transform: translateY(2px); /* Desplazamiento hacia abajo */
+    }
+    75% {
+        transform: translateY(-2px); /* Regreso hacia arriba */
+    }
+    100% {
+        transform: translateY(0); /* Vuelve al punto inicial */
+    }
+}
+
+
