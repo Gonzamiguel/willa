@@ -70,8 +70,8 @@ body, html {
     }
 }
 
-/* Estilos para dispositivos móviles grandes (iPhone 11 a 15 y dispositivos similares) */
-@media screen and (max-width: 850px) {
+/* Estilos para dispositivos móviles como iPhone 11 a iPhone 15 */
+@media screen and (max-width: 350px) {
     .icono-sobre-imagen {
         width: 45px;
         top: 61%; /* Ajusta la posición para pantallas móviles */
@@ -80,60 +80,9 @@ body, html {
     }
 
     .texto-sobre-imagen {
-        bottom: 22%; /* Ajusta la posición del texto */
+        bottom: 22%; /* Ajusta la posición del texto para evitar que se salga de la pantalla */
         left: 20%;
-        font-size: 20px;
-        transform: translateX(-50%);
-    }
-}
-
-/* Estilos para pantallas medianas (tabletas y móviles grandes, 600px a 850px) */
-@media screen and (max-width: 600px) {
-    .icono-sobre-imagen {
-        width: 40px;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .texto-sobre-imagen {
-        bottom: 20%; /* Ajustar para que no se salga del viewport */
-        left: 50%;
-        font-size: 18px;
-        transform: translateX(-50%);
-    }
-}
-
-/* Estilos para pantallas pequeñas (smartphones pequeños, 375px a 600px) */
-@media screen and (max-width: 375px) {
-    .icono-sobre-imagen {
-        width: 35px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .texto-sobre-imagen {
-        bottom: 18%;
-        left: 50%;
-        font-size: 16px;
-        transform: translateX(-50%);
-    }
-}
-
-/* Estilos para pantallas muy pequeñas (móviles antiguos o compactos, menos de 375px) */
-@media screen and (max-width: 320px) {
-    .icono-sobre-imagen {
-        width: 30px;
-        top: 45%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .texto-sobre-imagen {
-        bottom: 15%;
-        left: 50%;
-        font-size: 14px;
+        font-size: 20px; /* Disminuir el tamaño del texto en móviles */
         transform: translateX(-50%);
     }
 }
