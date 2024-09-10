@@ -74,13 +74,13 @@ body, html {
 @media screen and (max-width: 850px) {
     .icono-sobre-imagen {
         width: 45px;
-        top: 63%; /* Ajusta la posición para pantallas móviles */
+        top: 61%; /* Ajusta la posición para pantallas móviles */
         left: 45%;
         transform: translate(-50%, -50%); /* Centrar el icono */
     }
 
     .texto-sobre-imagen {
-        bottom: 18.5%; /* Ajusta la posición del texto para evitar que se salga de la pantalla */
+        bottom: 19.5%; /* Ajusta la posición del texto para evitar que se salga de la pantalla */
         left: 20%;
         font-size: 20px; /* Disminuir el tamaño del texto en móviles */
         transform: translateX(-50%);
